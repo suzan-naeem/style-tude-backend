@@ -17,6 +17,10 @@ app.get('/api/products/:id', (req, res) => {
     }
 });
 
+app.get('/api/products', (req, res) => {
+        res.send(data.products);    
+});
+
 app.listen(port, () => {
     console.log(`Serve at http://localhost:${port}`);
 }); 
