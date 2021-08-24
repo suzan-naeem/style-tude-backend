@@ -3,9 +3,7 @@ import data from './data.js';
 
 const app = express();
 const port = process.env.PORT || 5000;
-const core = require("cors");
 
-app.use(core());
 
 app.get('/', (req, res) => {
     res.send('server is ready');
